@@ -1,0 +1,13 @@
+.wrapper {
+}
+
+.container {
+    width: var(--default-layout-width);
+    margin: 0 auto;
+    min-height: 1000px;
+    display: flex;
+}
+
+.content {
+    flex: 1;
+}
