@@ -1,5 +1,6 @@
 // Reset css by `npm install --save normalize.css`
 @import 'normalize.css';
+
 // Default font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
 
@@ -11,6 +12,7 @@
     // Default layout
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
+    --default-layout-horizon-spacer: 24px;
     --default-layout-sidebar-width: 356px;
     --header-search-width: 400px;
     --header-search-height: 46px;
@@ -50,4 +52,27 @@ input,
 a[href] {
     text-decoration: none;
     color: var(--black-color);
+}
+
+// Custom tippy tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
 }

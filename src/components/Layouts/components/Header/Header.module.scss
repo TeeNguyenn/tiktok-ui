@@ -10,14 +10,12 @@
     justify-content: center;
 }
 .inner {
+    padding: 0 var(--default-layout-horizon-spacer);
     height: 100%;
     width: var(--default-layout-width);
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
 }
 
 .search {
@@ -107,10 +105,33 @@
     }
 }
 
+// Actions
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
 .more-btn {
     font-size: 2rem;
     background-color: transparent;
     margin-left: 20px;
     padding: 8px;
+    cursor: pointer;
+}
+
+.action-btn {
+    font-size: 2.2rem;
+    background-color: transparent;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 12px;
     cursor: pointer;
 }
